@@ -1,0 +1,51 @@
+body {
+    font-family: Veranda, Ariel, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+header h2 { 
+    font-family: "Times New Roman"; 
+    color: DarkCyan;
+}
+header p {
+    text-indent: 3em;
+}
+
+header img {
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+main img { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+main {
+}
+main h1 {
+    font-size: 300%;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px red;
+}
+main h2 {
+    color: FireBrick;
+    text-align: center;
+}
+
+main h3 {
+    color: navy;
+}
+
+blockquote {
+    font-style: bold;
+    font-family: "Times New Roman"; 
+    font-size: 120%
+}
+
+footer {
+    margin-top: 50px;
+}
