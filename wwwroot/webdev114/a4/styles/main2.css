@@ -18,17 +18,26 @@ header {
     padding-top: 2.5em;
     padding-bottom: 1em;
     padding-left: 20px;
-    border-bottom: 2px solid black;
     float: right;
 }
 main {
-    width: 590px;
+    width: 610px;
     padding-top: 1.5em;
     padding-bottom: 2em;
-    padding-left: 20px;
     border-bottom: 2px solid black;
     float: right;
     height: 100%;
+}
+div {
+    width: 484px;
+    margin: 0 auto;
+}
+section {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: white;
 }
 aside {
     height: 100%;
@@ -45,3 +54,22 @@ header h2 {
     padding-top: 1.5em;
     padding-left: 2.5em;
 }
+#box1 {
+    float: left;
+}
+#box2 {
+    float: left;
+}
+#box3 {
+    clear: left;
+    float: left;
+}
+#box4 {
+    float: left;
+}
+
+
+
+
+
+
