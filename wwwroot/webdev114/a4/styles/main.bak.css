@@ -12,12 +12,11 @@ body {
     margin: 0 auto;
     border: 3px solid black;
     background-color: #fffded;
-    height: 1000px;
-
 }
 header {
     width: 590px;
     padding-top: 2.5em;
+    padding-bottom: 1em;
     padding-left: 20px;
     float: right;
 }
@@ -25,7 +24,18 @@ main {
     width: 610px;
     padding-top: 1.5em;
     padding-bottom: 2em;
+    border-bottom: 2px solid black;
     float: right;
+    height: 100%;
+}
+main div {
+    width: 516px;
+    margin: 0 auto;
+    height: 20px;
+}
+section {
+    width: 226px;
+    margin: 15px;
 }
 aside {
     height: 100%;
@@ -45,14 +55,28 @@ h1 {
     font-family: "Snell Roundhand", cursive;
     font-size: 4em;
 }
-footer {
-    clear: both;
-}
 header h2 {
     padding-top: 1.5em;
-    text-align: center;
+    padding-left: 2.5em;
+}
+#box1 {
+    float: left;
+}
+#box2 {
+    float: left;
+}
+#box3 {
+    clear: left;
+    float: left;
+}
+#box4 {
+    float: left;
 }
 aside img {
+    /* position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 80px; */
     width: 130px;
     margin: 25px 29px;;
 }
@@ -84,6 +108,7 @@ aside p {
 }
 #nav_list ul li a {
     display: block;
+    /* padding: .7em 0 .7em .8em; */
     padding-top: .6em;
     padding-bottom: .6em;
     text-align: center;
@@ -91,35 +116,17 @@ aside p {
     color: black;
     font-size: 1.3em;
 }
-main section {
-    clear: both;
-    padding: 0 1em 1em;
+main section img {
+    width: 220px;
+    border: 3px solid black;
 }
 main section h3 {
-    padding-bottom: .5em;
+    font-size: 1.5em;
     text-align: center;
+    font-weight: normal;
+    
 }
-main p { 
-    margin-bottom: 1em; 
-}
-main p:last-child { 
-    margin-bottom: 0em; 
-}
-main img {
-    width: 250px;
-    border: 2px solid black;
-}
-main img.left {
-    float: left;
-    clear: both;
-    margin-right: 1em;
 
-}
-main img.right {
-    float: right;
-    clear: both;
-    margin-left: 1em;
-}
 
 
 
