@@ -1,4 +1,4 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,17 +11,18 @@ fall, petting zoo, hay rides, corn maze, family-friendly, fun, Ashwaubenon,
 Wisonsin">
 <title>Barry's Berry Farm - jams, jellies and seasonal favorites</title>
 <link rel="stylesheet" href="styles/main.css">
+<link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
         <h1>Barry's Berry Farm</h1>
-        <img src="images/squigglylineflip.png">
-        <h2>Enjoy nature's bounty all season long</h2>
+        <img src="images/squigglylineflip.png" alt="decorative squiggle">
     </header>
     <main>
+        <h2 id="home">Enjoy nature's bounty all season long</h2>
         <section class="text">
             <p>Looking for something fun to do? Get away from the hustle and bustle of the 
-            city and come to Barry's Berry Farm, where there's always something going on.</p>
+            city and come to <strong>Barry's Berry Farm</strong>, where there's always something going on.</p>
             <p>From hay rides to apple orchards, there something for everyone. Peruse our 
             jams and jellies, or take a bouncy wagon ride along our rustic dirt roads.</p>
             <p>Check out some of the links below, or browse all our offerings through the side
@@ -29,27 +30,28 @@ Wisonsin">
         </section>
         <div>
             <section>
-                <img src="images/hayride.jpg">
+                <a href="pages/activities.html"><img src="images/hayride.jpg" alt="Hay Rides"></a>
                 <h3>Hay Rides!</h3>
             </section>
             <section>
-                <img src="images/jamjelly2.jpg">
+                <a href="pages/products.html"><img src="images/jamjelly2.jpg" alt="Jams Jellies"></a>
                 <h3>Jams &amp; Jelly</h3>
             </section>
             <section class="clear">
-                <img src="images/appletree.jpg">
+                <a href="pages/farm.html"><img src="images/appletree.jpg" alt="Apple Orchard"></a>
                 <h3>Apple Orchard</h3>
             </section>
             <section>
-                <img src="images/pumpkinpatch.jpg">
+                <a href="pages/farm.html"><img src="images/pumpkinpatch.jpg" alt="Pumpkin Patch"></a>
                 <h3>Pumpkin Patch</h3>
             </section>
         </div>
     </main>
     <aside>
-        <a href="index.html"><img src="images/farmhouse.png"></a>
+        <img src="images/farmhouse.png" alt="Farmhouse">
         <nav id="nav_list">
             <ul>
+                <li><a class="current">Home</a></li>
                 <li><a href="pages/farm.html">Farm</a></li>
                 <li><a href="pages/activities.html">Activities</a></li>
                 <li><a href="pages/products.html">Products</a></li>

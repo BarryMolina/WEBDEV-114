@@ -1,37 +1,129 @@
 /* the styles for the elements */
+* { 
+        margin: 0;
+        padding: 0;
+     }
+html {  
+        background-color: white;
+    }
 body {
 	font-family: Arial, Helvetica, sans-serif;
         font-size: 100%;
+        width: 800px;
+        margin: 0 auto;
+        border: 3px solid #931420;
+        background-color: #fffded;
+}
+header {
+        padding-top: 1.5em;
+        padding-bottom: 2em;
+        border-bottom: 3px solid #931420;
+        background-image: 
+            -webkit-linear-gradient(
+                30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%) 
+    }
+main {
+	clear: left;
+    }
+section {
+        width: 525px;
+        float: right;
+        padding: 0 20px 20px 20px; 
+    }
+aside {
+        width: 215px;
+        float: right;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+footer {
+        border-top: 3px solid #931420;
+        background-color: #931420;
+        clear: both;
+    }
+h1 {
+        font-size: 150%;
+        padding-top: .5em;
+        padding-bottom: .25em;
+        margin: 0;
+    }
+article {
+        padding: .5em 0;
+        border-top: 2px solid #800000;
+        border-bottom: 2px solid #800000
 }
 
 /* the styles for the header */
 header img {
 	float: left;
-}
+        padding: 0  30px;
+    }
 header h2 {
         font-size: 170%;
         color: #800000;
-        text-indent: 30px;
     }
 header h3 {
         font-size: 130%;
         font-style: italic;
-        text-indent: 30px
     }
 .shadow { text-shadow: 1px 1px 2px #800000; }
 
 /* the styles for the section */
-main {
-	clear: left;
-}
-
-main h1 { font-size: 150% }
-main h2 {
+section h2 {
+        padding-top: .5em;
+        padding-bottom: .25em;
         font-size: 130%;
         color: #800000;
 }
-main h3 { font-size: 105%; }
-main a:hover, a:focus { font-style: italic; }
+section ul {
+        padding-bottom: .25em;
+        padding-left: 1.25em;
+    }
+section li {
+        padding-bottom: .35em;
+    } 
+section p {
+        padding-bottom: .5em;
+    }
+section blockquote {
+        padding: 0 2em;
+        font-style: italic;
+    }
+
+/* the styles for the article */
+article img {
+        float: right;
+        margin: .5em 0 1em 1.5em;
+        border: 1px solid black;
+}
+article h2 {
+        padding-top: 0;
+}
+article h3 {
+        font-size: 105%;
+        padding-bottom: .25em;
+}
+/* the styles for the aside */
+aside h2 {
+        padding-top: .5em;
+        padding-bottom: .25em;
+        font-size: 130%;
+        color: #800000;
+}
+aside h3 { 
+        padding-bottom: .25em;
+        font-size: 105%;
+    }
+aside a:hover, a:focus { font-style: italic; }
+aside img {
+        padding-bottom: 1em;
+    }
 
 /* the styles for the footer */
-footer p {text-align: center;}
+footer p {
+        padding: 1em 0;
+        text-align: center;
+        color: white;
+    }
+
+
