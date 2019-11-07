@@ -9,7 +9,8 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
         font-size: 100%;
-        width: 800px;
+        width: 98%;
+        max-width: 960px;
         margin: 0 auto;
         border: 3px solid #931420;
         background-color: #fffded;
@@ -26,14 +27,14 @@ main {
 	clear: left;
     }
 section {
-        width: 525px;
+        width: 65.625%;
         float: right;
-        padding: 0 20px 20px 20px; 
+        padding: 0 2.5% 20px 2.5%; 
     }
 aside {
-        width: 215px;
+        width: 26.875%;
         float: right;
-        padding-left: 20px;
+        padding-left: 2.5%;
         padding-bottom: 20px;
     }
 footer {
@@ -56,7 +57,7 @@ article {
 /* the styles for the header */
 header img {
 	float: left;
-        padding: 0  30px;
+        padding: 0  3.75%;
     }
 header h2 {
         font-size: 170%;
@@ -78,10 +79,10 @@ header h3 {
     }
 #nav_menu ul li {
         float: left;
+        width: 20%;
     }
 #nav_menu ul li a {
         display: block;
-        width: 160px;
         text-align: center;
         padding: 1em 0;
         text-decoration: none;
@@ -94,6 +95,7 @@ header h3 {
     }
 #nav_menu ul ul {
         display: none;
+        width: 100%;
         position: absolute;
         top: 100%;
     }
@@ -118,6 +120,7 @@ section h2 {
 section ul {
         padding-bottom: .25em;
         padding-left: 1.25em;
+        list-style-type: circle;
     }
 section li {
         padding-bottom: .35em;
@@ -132,6 +135,8 @@ section blockquote {
 
 /* the styles for the article */
 article img {
+        max-width: 40%;
+        min-width: 150px;
         float: right;
         margin: .5em 0 1em 1.5em;
         border: 1px solid black;
@@ -166,4 +171,40 @@ footer p {
         color: white;
     }
 
+/* tablet in portrait view */
+@media only screen and (max-width: 959px) {
+    section h1 {
+        font-size: 135%;
+    }
+    section h2 {
+        font-size: 120%;
+    }
+    aside h2 {
+        font-size: 120%;
+    }
+}
+/* phone in landscape */
+@media only screen and (max-width: 767px) {
+    section {
+        float: none;
+        width: 95%;
+    }
+    aside {
+        float: none;
+        padding-right: 2.5%;
+        width: 95%;
+    }
+    header {
+        text-align: center;
+    }
+    header img {
+        float: none;
+    }
+    article img {
+        max-width: 30%;
+    }
+    aside div {
+        column-count: 2;
+    }
+}
 

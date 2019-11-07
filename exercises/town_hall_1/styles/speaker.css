@@ -60,6 +60,46 @@ header h3 {
     }
 .shadow { text-shadow: 1px 1px 2px #800000; }
 
+/* the styles for the navigation menu */
+#nav_menu  {
+        position: relative;
+    }
+#nav_menu ul {
+        list-style: none;
+        margin, padding: 0;
+    }
+#nav_menu ul li {
+        float: left;
+    }
+#nav_menu ul li a {
+        display: block;
+        width: 160px;
+        text-align: center;
+        padding: 1em 0;
+        text-decoration: none;
+        background-color: #800000;
+        color: white;
+        font-weight: bold;
+    }
+#nav_menu ul li a.current {
+        color: yellow;
+    }
+#nav_menu ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+#nav_menu ul ul li {
+        float: none;
+    }
+#nav_menu ul li:hover > ul {
+        display: block;
+    }
+#nav_menu > ul::after {
+        content: "";
+        display: block;
+        clear: both;
+}
 /* the styles for the section */
 section h1 {
         font-size: 150%;
@@ -75,6 +115,7 @@ section h2 {
 section ul {
         padding-bottom: .25em;
         padding-left: 1.25em;
+        list-style-type: circle;
     }
 section li {
         padding-bottom: .35em;
