@@ -207,4 +207,9 @@ footer p {
         column-count: 2;
     }
 }
+@media only screen and (max-width: 479px) {
+    body {
+        font-size: 90%;
+    }
+}
 
