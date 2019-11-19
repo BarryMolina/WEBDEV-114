@@ -8,7 +8,7 @@ html {
 body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 100%;
-	width: 96%;                         /* changed from 990 pixels */
+	width: 100%;                         /* changed from 990 pixels */
 	max-width: 1200px;                  /* maximum width of page */
 	background-color: white;
 	margin: 15px auto;
