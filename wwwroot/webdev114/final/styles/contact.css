@@ -64,22 +64,22 @@ label {
     font-size: 1.2em;
     color: LightGrey;
 }
-form input, form textarea {
+input, textarea {
     margin-left: 1em;
     margin-right: 1em;
     margin-bottom: 1em;
     width: 14em;
 }
-form textarea {
+textarea {
     width: 24em;
     margin-bottom: .5em;
 }
 /* Styles for the form */
-form input#first_name {
+input#first_name {
     width: 6.6em;
     margin-right: .1em;
 }
-form input#last_name {
+input#last_name {
     width: 6.6em;
     margin-left: .1em;
 }
@@ -96,6 +96,12 @@ main h1 {
     padding-top: 1em;
     padding-bottom: .3em;
     text-align: center;
+}
+main h2 {
+    color: LightGrey;
+    padding-top: 1em;
+    margin-left: 7em;
+
 }
 /* Styles for nav_menu */
 #nav_menu ul {
