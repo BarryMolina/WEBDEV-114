@@ -24,23 +24,22 @@ header {
                 30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%) 
     }
 main {
-	clear: left;
+        display: flex;
     }
 section {
-        width: 65.625%;
-        float: right;
+        flex-basis: 70%;
         padding: 0 2.5% 20px 2.5%; 
+        order: 2;
     }
 aside {
-        width: 26.875%;
-        float: right;
+        flex-basis: 30%;
         padding-left: 2.5%;
         padding-bottom: 20px;
+        order: 1;
     }
 footer {
         border-top: 3px solid #931420;
         background-color: #931420;
-        clear: both;
     }
 h1 {
         font-size: 150%;
@@ -52,6 +51,9 @@ article {
         padding: .5em 0;
         border-top: 2px solid #800000;
         border-bottom: 2px solid #800000
+}
+#mobile_menu {
+    display: none;
 }
 
 /* the styles for the header */
@@ -74,12 +76,14 @@ header h3 {
         position: relative;
     }
 #nav_menu ul {
+        display: flex; 
+        flex-basis: 100%;
+        justify-content: space-between;
         list-style: none;
         margin, padding: 0;
     }
 #nav_menu ul li {
-        float: left;
-        width: 20%;
+        flex-basis: 20%;
     }
 #nav_menu ul li a {
         display: block;
@@ -100,7 +104,6 @@ header h3 {
         top: 100%;
     }
 #nav_menu ul ul li {
-        float: none;
     }
 #nav_menu ul li:hover > ul {
         display: block;
@@ -108,7 +111,6 @@ header h3 {
 #nav_menu > ul::after {
         content: "";
         display: block;
-        clear: both;
 }
 /* the styles for the section */
 section h2 {
@@ -137,9 +139,9 @@ section blockquote {
 article img {
         max-width: 40%;
         min-width: 150px;
-        float: right;
         margin: .5em 0 1em 1.5em;
         border: 1px solid black;
+        float: right;
 }
 article h2 {
         padding-top: 0;
@@ -185,17 +187,29 @@ footer p {
 }
 /* phone in landscape */
 @media only screen and (max-width: 767px) {
+    main {
+        flex-direction: column;
+    }
     section {
-        float: none;
         width: 95%;
+        order: 1;
     }
     aside {
-        float: none;
         padding-right: 2.5%;
         width: 95%;
+        order: 2;
     }
     header {
         text-align: center;
+    }
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #800000 !important ;
     }
     header img {
         float: none;

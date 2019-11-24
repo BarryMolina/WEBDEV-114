@@ -1,0 +1,47 @@
+header {
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-image: -webkit-linear-gradient(45deg,grey 0%, white 40%, grey 100%);
+}
+nav {
+    border-bottom: 2px solid black;
+}
+/* Styles for the header */
+header h2 {
+    font-size: 6em;
+    text-align: center;
+    font-weight: lighter;
+    padding: .3em 0;
+    text-shadow: 1px 1px 4px black;
+    /* color: DarkGoldenRod;
+    text-shadow: 2px 2px 4px black,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; */
+}
+/* Styles for nav_menu */
+#nav_menu ul {
+    background: Grey;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+#nav_menu li {
+    padding: .5em;
+}
+#nav_menu ul li a {
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: LightGrey;
+    text-shadow: 1px 1px 2px black;
+}
+#nav_menu ul ul {
+    display: none;
+}
+#nav_menu a:hover {
+    text-shadow: 3px 3px 6px black;
+    color: Gainsboro;
+}
