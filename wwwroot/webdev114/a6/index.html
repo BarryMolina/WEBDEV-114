@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Timothy O'Donnell is a multi-talented artist who works with the Milwaukee Ballet to produce Choreography, Photography, and almost everything related to dance in general.">
+<meta name="keywords" content="Dance, Art, Choreography, Photography, Director, Photo editing, Film Director, Artist, Milwuakee Ballet, dance teacher">
+<title>Timothy O'Donnell - Dancer, Choreographer, Photographer, Director</title>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <h2>Timothy O&apos;Donnell</h2>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="dance.html">Dance</a></li>
+            <li><a href="choreography.html">Choreography</a></li>
+            <li><a href="photography.html">Photography</a></li>
+                <ul>
+                    <li><a href="photography/gallery.html">Gallery</a></li>
+                    <li><a href="photography/editing.html">Editing Process</a></li>
+                </ul>
+            <li><a href="film.html">Film</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Contact Tim</h1>
+	<form action="sendmail.php" method="post" name="contact_form" id="contact_form">
+            <label for="first_name last_name">Name:</label>
+            <input type="text" name="first_name" id="first_name" placeholder="First" required>
+            <input type="text" name="last_name" id="last_name" placeholder="Last" required><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required><br>
+            <label for="todays_date">Today's Date:</label>
+            <input type="date" name="todays_date" id="today_date" required><br>
+            <label for="subject">Subject:</label>         
+            <input type="text" name="subject" id="subject" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="10" required></textarea><br>
+            <label>&nbsp;</label>
+            <input type="submit" id="submit" value="Send">
+            <input type="reset" id="reset" value="Reset"><br>
+	</form>
+    </main>
+    <footer>
+        <p>&copy;Copyright 2019 Barry Molina</p>
+    </footer>
+</body>
+</html>
