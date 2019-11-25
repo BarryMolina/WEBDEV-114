@@ -83,7 +83,7 @@ header h3 {
         margin, padding: 0;
     }
 #nav_menu ul li {
-        flex-basis: 20%;
+        width: 20%;
     }
 #nav_menu ul li a {
         display: block;
@@ -106,11 +106,12 @@ header h3 {
 #nav_menu ul ul li {
     }
 #nav_menu ul li:hover > ul {
-        display: block;
+        display: block; 
     }
 #nav_menu > ul::after {
         content: "";
         display: block;
+        clear: both;
 }
 /* the styles for the section */
 section h2 {
@@ -224,6 +225,9 @@ footer p {
 @media only screen and (max-width: 479px) {
     body {
         font-size: 90%;
+    }
+    article img {
+        float: none;
     }
 }
 
