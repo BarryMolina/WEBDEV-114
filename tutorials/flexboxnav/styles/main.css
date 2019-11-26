@@ -38,5 +38,28 @@
 .submenu {
     display: flex;
     flex-direction: column;
+    position: absolute;
     width: 100%;
+}
+.submenu li {
+    position: relative;
+}
+.submenu li:hover .sub-submenu li {
+    display: block;
+}
+.sub-submenu li {
+    display: none;
+}
+.sub-submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 120px;
+}
+.arrow {
+    margin-left: 8px;
+    color: #eee;
+    font-size: 12px;
 }
