@@ -12,6 +12,8 @@ header {
 }
 nav {
     border-bottom: 2px solid black;
+    position: relative;
+    z-index: 1;
 }
 /* Styles for the header */
 header h2 {
@@ -67,6 +69,10 @@ header h2 {
     display: block;
     /* top: 0px; */
 }
+/* #nav_menu a:hover + .submenu > li {
+    border-top: 2px solid black;
+    display: block;
+} */
 .submenu li {
     display: none;
 }
