@@ -13,12 +13,12 @@ body {
     width: 100%;
 }
 main {
-    background-image: url("../images/SansPleurer-32(2k).jpg");
+    /* background-image: url("../images/SansPleurer-32(2k).jpg");
     background-repeat: no-repeat;
     background-size: 900px;
+    z-index: -2; */
     height: 800px;
     position: relative;
-    z-index: -2;
 }
 footer {
     background: grey;
@@ -33,10 +33,13 @@ main h1 {
 }
 main section#first {
     width: 40%;
-    float: right;
+    /* float: right;
     margin-right: 3em;
-    padding-top: 3em;
+    padding-top: 3em; */
     color: LightGrey;
+    position: absolute;
+    top: 3em;
+    right: 3em;
 }
 .shadow {
     background-color: rgba(0, 0, 0, .8);
@@ -53,6 +56,12 @@ main section#first {
     border-radius: 20px;
     box-shadow: 1px 0px 50px 50px rgba(0, 0, 0, .8); 
     z-index: -1;
+}
+main img {
+    position: relative;
+    max-width: 70%;
+    min-width: 900px;
+    z-index: -2;
 }
 main aside#dance {
     position: absolute;

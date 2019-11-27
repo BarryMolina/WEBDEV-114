@@ -25,7 +25,7 @@
 }
 #main-nav li {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
 }
 #main-nav li:hover .submenu > li {
