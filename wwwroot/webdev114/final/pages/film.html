@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Timothy O'Donnell is a multi-talented artist who works with the Milwaukee Ballet to produce Choreography, Photography, and almost everything related to dance in general.">
+<meta name="keywords" content="Dance, Art, Choreography, Photography, Director, Photo editing, Film Director, Artist, Milwuakee Ballet, dance teacher">
+<title>Timothy O'Donnell - Dancer, Choreographer, Photographer, Director</title>
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="../styles/main.css">
+<link rel="stylesheet" href="../styles/film.css">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h2>Timothy O&apos;Donnell</h2></a>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="dance.html">Dance</a></li>
+            <li><a href="choreography.html">Choreography</a></li>
+            <li><a href="photography.html">Photography</a>
+                <ul class="submenu">
+                    <li><a href="photography/gallery.html">Gallery</a></li>
+                    <li><a href="photography/editing.html">Editing Process</a></li>
+                </ul>
+            </li>
+            <li><a href="film.html">Film</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Film</h2>
+        <h2>Milwaukee Ballet Promo Videos</h2>
+        <div class="videos">
+            <div class="video">
+            <h3>Coppelia</h3>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T1wmAARujsM"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            </div>
+            </div>
+            <div class="video">
+            <h3>Moving</h3>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1SE96kNhu3s" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            </div>
+        </div>
+        <a href="#" id="show" onclick="showVideos(); return false">Show more</a>
+        <a href="#" id="hide" onclick="hideVideos(); return false">Show less</a>
+        <div class="videos" id="hidden">
+            <div class="video">
+                <h3>Ballet Beat 2019</h3>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NhpTMYPfTXk"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            </div>
+            <div class="video">
+                <h3>Ballet Beat 2017</h3>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KivY7A_DLvA" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            </div>
+            </div>
+        </div>
+    <script>
+        function showVideos() {
+            var hidden = document.getElementById("hidden");
+            var hide = document.getElementById("hide");
+            var show = document.getElementById("show");
+            hidden.style.display = "flex";
+            hide.style.display = "inline";
+            show.style.display = "none";
+        }
+    </script>
+    <script>
+        function hideVideos() {
+            var hidden = document.getElementById("hidden");
+            var hide = document.getElementById("hide");
+            var show = document.getElementById("show");
+            hidden.style.display = "none";
+            hide.style.display = "none";
+            show.style.display = "inline";
+        }
+    </script>
+    </main>
+    <footer>
+        <p>&copy;Copyright 2019 Barry Molina</p>
+    </footer>
+</body>
+</html>

@@ -6,6 +6,7 @@
 <meta name="keywords" content="Dance, Art, Choreography, Photography, Director, Photo editing, Film Director, Artist, Milwuakee Ballet, dance teacher">
 <title>Timothy O'Donnell - Dancer, Choreographer, Photographer, Director</title>
 <link rel="stylesheet" href="../styles/main.css">
+<link rel="stylesheet" href="../styles/home.css">
 <link rel="shortcut icon" href="../images/favicon.ico">
 </head>
 <body>

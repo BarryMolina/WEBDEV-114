@@ -1,97 +1,142 @@
-/* reset selector */
 * {
     margin: 0;
     padding: 0;
-    }
-/* formatting for elements */
-html {
-    background-color: black;
+    box-sizing: border-box;
 }
 body {
     font-family: Arial, Helvetica, sans-serif, serif;
     font-size: 100%;
     width: 100%;
 }
-main {
-    /* background-image: url("../images/SansPleurer-32(2k).jpg");
-    background-repeat: no-repeat;
-    background-size: 900px;
-    z-index: -2; */
-    height: 800px;
+header {
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-image: -webkit-linear-gradient(45deg,grey 0%, white 40%, grey 100%);
+    box-shadow: inset 0px 0px 25px 1px rgba(0,0,0,0.5);
+}
+nav {
+    border-bottom: 2px solid black;
     position: relative;
+    z-index: 1;
 }
 footer {
     background: grey;
     
 }
-/* Styles for main */
-main h1 {
-    font-size: 1.7em;
-    color: LightGrey;
-    font-weight: lighter;
-    padding-bottom: .3em;
+/* Styles for the header */
+header a {
+    text-decoration: none;
+    color: black;
 }
-main section#first {
-    width: 40%;
-    /* float: right;
-    margin-right: 3em;
-    padding-top: 3em; */
-    color: LightGrey;
-    position: absolute;
-    top: 3em;
-    right: 3em;
+header h2 {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 6em;
+    text-align: center;
+    padding: .3em 0;
+    text-shadow: .5px .5px 2px black;
+    /* color: DarkGoldenRod;
+    text-shadow: 2px 2px 4px black,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; */
 }
-.shadow {
-    background-color: rgba(0, 0, 0, .8);
+/* Styles for nav_menu */
+/* #nav_menu {
     position: relative;
-    border-radius: 20px;
+} */
+#nav_menu a {
+    font-family: 'Roboto';
+    font-weight: 100;
+    /* display: block; */
+    /* height: 64px; */
+    font-size: 1.5em;
+    /* padding: .5em 0; */
+    text-decoration: none;
+    color: Gainsboro;
+    text-shadow: 1px 1px 2px black;
+    /* background: grey; */
+    /* text-align: center; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* transition: background 0.4s; */
 }
-.shadow:before {
+#nav_menu a:hover {
+    /* background: silver; */
+    text-shadow: 3px 3px 6px black;
+    color: white;
+}
+#nav_menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    background: DimGrey;
+}
+#nav_menu li {
+    padding: .6em;
+    text-align: center;
+    /* width: 100%; */
+    position: relative;
+}
+#nav_menu li:hover .submenu > li {
+    border-top: 1px solid black;
+    display: block;
+    /* top: 0px; */
+}
+/* #nav_menu a:hover + .submenu > li {
+    border-top: 2px solid black;
+    display: block;
+} */
+.submenu li {
+    display: none;
+}
+.submenu a {
+}
+.submenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+/* #nav_menu > ul::after {
     content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 20px;
-    box-shadow: 1px 0px 50px 50px rgba(0, 0, 0, .8); 
-    z-index: -1;
-}
-main img {
-    position: relative;
-    max-width: 70%;
-    min-width: 900px;
-    z-index: -2;
-}
-main aside#dance {
-    position: absolute;
-    top: 600px;
-    float: none;
-    width: 60%;
-}
-/* Styles for aside */
-main aside {
-    clear: right;
-    float: right;
-    margin: 3em 3em 0 0;
-    color: LightGrey;
-}
-main aside h2 {
-    padding-bottom: .2em;
-    font-weight: lighter;
-}
-main aside.short {
-    width: 30%;
-}
-main aside.long {
-    width: 33%;
-}
+    display: block;
+    clear: both;
+} */
+/* #nav_menu a:hover {
+    text-shadow: 3px 3px 6px black;
+    color: Gainsboro;
+} */
 
 /* Styles for the footer */
 footer p {
     text-align: center;
     padding: .5em 0;
 }
+@media only screen and (max-width: 767px) {
+    header h2 {
+        font-size: 5em;
 
-
+    }
+    #nav_menu ul {
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header h2 {
+        font-size: 4em;
+    }
+}
+@media only screen and (max-width: 479px) {
+    header h2{
+        font-size: 5em;
+    }
+}
 

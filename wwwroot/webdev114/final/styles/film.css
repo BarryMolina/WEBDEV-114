@@ -1,0 +1,95 @@
+/* reset selector */
+* {
+    margin: 0;
+    padding: 0;
+    }
+/* formatting for elements */
+html {
+    background-color: black;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif, serif;
+    font-size: 100%;
+    width: 100%;
+}
+main {
+    background-color: gainsboro;
+    min-height: 800px;
+    padding: 0 1.2em;
+}
+main .video-container {
+    overflow: hidden;
+    padding-bottom:56.25%;
+    position: relative;
+    height: 0;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    /* border: 1px solid black; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+main .video {
+    width: 48%;
+}
+main h1 {
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    padding-bottom: .2em;
+    padding-top: 1em;
+    text-align: center;
+    font-style: italic;
+}
+main h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-bottom: .7em;
+}
+main h3 {
+    padding-bottom: .3em;
+}
+main div.videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+main div#hidden {
+    display: none;
+    clear: both;
+}
+main a {
+    text-decoration: none;
+    float: right;
+    padding-top: .5em;
+    padding-right: 1em;
+}
+main a#hide {
+    display: none;
+}
+@media only screen and (max-width: 960px) {
+    main .videos {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .video {
+        width: 75%;
+        padding-bottom: 1.3em;
+    }
+}
+@media only screen and (max-width: 767px) {
+    main .video {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 479px) {
+    main {
+        padding: 0 .5em;
+    }
+}
+
+
