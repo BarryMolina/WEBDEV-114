@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Timothy O'Donnell is a multi-talented artist who works with the Milwaukee Ballet to produce Choreography, Photography, and almost everything related to dance in general.">
+<meta name="keywords" content="Dance, Art, Choreography, Photography, Director, Photo editing, Film Director, Artist, Milwuakee Ballet, dance teacher">
+<title>Timothy O'Donnell - Dancer, Choreographer, Photographer, Director</title>
+<link rel="stylesheet" href="../styles/normalize.css">
+<link rel="stylesheet" href="../styles/main.css">
+<link rel="stylesheet" href="../styles/gallery.css">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><h2>Timothy O&apos;Donnell</h2></a>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="dance.html">Dance</a></li>
+            <li><a href="choreography.html">Choreography</a></li>
+            <li><a href="photography.html">Photography</a>
+                <ul class="submenu">
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="editing.html">Editing Process</a></li>
+                </ul>
+            </li>
+            <li><a href="film.html">Film</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Photo Gallery</h1>
+        <h2 id="first">Dance Shots</h2>
+        <div class="photos">
+            <img id="dance1" src="../images/gallery/dance/Alana.jpg" alt="Alana" onclick="showModal(this.src); return false">
+            <img id="dance2" src="../images/gallery/dance/Barry.jpg" alt="Barry" onclick="showModal(this.src); return false">
+            <img id="dance3" src="../images/gallery/dance/Lizzie.jpg" alt="Lizzie" onclick="showModal(this.src); return false">
+            <img id="dance4" src="../images/gallery/dance/Joe.jpg" alt="Joe" onclick="showModal(this.src); return false">
+        <div class="photos hidden" id="dance">
+            <img id="dance5" src="../images/gallery/dance/Cathrine.jpg" alt="Cathrine" onclick="showModal(this.src); return false">
+            <img id="dance6" src="../images/gallery/dance/Marize.jpg" alt="Marize" onclick="showModal(this.src); return false">
+        </div>
+        </div>
+        <a href="#" id="show-dance" onclick="showHide(this.id, 'dance'); return false">Show more</a>
+        <h2>Art Photography</h2>
+        <div class="photos" id="art">
+            <img id="art1" src="../images/gallery/art/branch.jpg" alt="Branch" onclick="showModal(this.src); return false">
+            <img id="art2" src="../images/gallery/art/tree.jpg" alt="Tree" onclick="showModal(this.src); return false">
+            <img id="art3" src="../images/gallery/art/lamp.jpg" alt="Lamp post" onclick="showModal(this.src); return false">
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <!-- <div class="photos hidden" id="art">
+        </div>
+        <a href="#" id="show-art" onclick="showHide(this.id, 'art'); return false">Show more</a> -->
+        
+     <script>
+        function showHide(linkID, photosID) {
+            var photos = document.getElementById(photosID).style;
+            var link = document.getElementById(linkID);
+            if (photos.display == "none" || !photos.display) {
+                photos.display = "flex";
+                link.innerHTML = "Show less";
+            } else {
+                photos.display = "none";
+                link.innerHTML = "Show more";
+            }
+        }       
+    </script>
+    <script>
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        function showModal(imgSrc) {
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+    
+    </main>
+    <footer>
+        <p>&copy;Copyright 2019 Barry Molina</p>
+    </footer>
+</body>
+</html>

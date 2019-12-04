@@ -1,32 +1,16 @@
-/* reset selector */
-* {
-    margin: 0;
-    padding: 0;
-    }
 /* formatting for elements */
-html {
+body {
     background-color: black;
 }
-body {
-    font-family: Arial, Helvetica, sans-serif, serif;
-    font-size: 100%;
-    width: 100%;
-}
-header {
-    width: 100%;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    background-image: -webkit-linear-gradient(45deg,grey 0%, white 40%, grey 100%);
-}
-nav {
-    border-bottom: 2px solid black;
+h1 {
+    color: gainsboro;
 }
 main {
     background-image: url();
     background-repeat: no-repeat;
     background-size: 900px;
-    height: 800px;
     position: relative;
+    padding: 0;
 }
 form {
     padding: 1.7em 0;
@@ -34,33 +18,11 @@ form {
     border-left: 3px solid grey;
     height: 500px;
 }
-fieldset {
-    border: none;
-}
-footer {
-    background: grey;
-    
-}
-/* Styles for the header */
-header h2 {
-    font-size: 6em;
-    text-align: center;
-    font-weight: lighter;
-    padding: .3em 0;
-    text-shadow: 1px 1px 4px black;
-    /* color: DarkGoldenRod;
-    text-shadow: 2px 2px 4px black,
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000; */
-}
-
+/* Styles for the form */
 label {
     float: left;
     width: 8.5em;
     text-align: right;
-    font-weight: bold;
     font-size: 1.2em;
     color: LightGrey;
 }
@@ -69,12 +31,14 @@ input, textarea {
     margin-right: 1em;
     margin-bottom: 1em;
     width: 14em;
+    background-color: WhiteSmoke;
+    padding: .3em;
+    font-size: .8em;
 }
 textarea {
     width: 24em;
     margin-bottom: .5em;
 }
-/* Styles for the form */
 input#first_name {
     width: 6.6em;
     margin-right: .1em;
@@ -89,48 +53,6 @@ input#submit, input#reset {
 }
 input#reset {
     margin-left: 0;
-}
-main h1 {
-    font-size: 2em;
-    color: LightGrey;
-    padding-top: 1em;
-    padding-bottom: .3em;
-    text-align: center;
-}
-main h2 {
-    color: LightGrey;
-    padding-top: 1em;
-    margin-left: 7em;
-
-}
-/* Styles for nav_menu */
-#nav_menu ul {
-    background: Grey;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-}
-#nav_menu li {
-    padding: .5em;
-}
-#nav_menu a {
-    display: block;
-    font-size: 1.5em;
-    text-decoration: none;
-    color: LightGrey;
-    text-shadow: 1px 1px 2px black;
-}
-#nav_menu ul ul {
-    display: none;
-}
-#nav_menu a:hover {
-    text-shadow: 3px 3px 6px black;
-    color: Gainsboro;
-}
-/* Styles for the footer */
-footer p {
-    text-align: center;
-    padding: .5em 0;
 }
 @media only screen and (max-width: 959px) {
     form {

@@ -1,16 +1,16 @@
-/* reset selector */
-* {
-    margin: 0;
-    padding: 0;
-    }
 /* formatting for elements */
+body {
+    position: relative;
+    background-color: black;
+    z-index: -3;
+}
 main {
     /* background-image: url("../images/SansPleurer-32(2k).jpg");
     background-repeat: no-repeat;
     background-size: 900px;
     z-index: -2; */
-    height: 800px;
     position: relative;
+    padding: 0;
 }
 /* Styles for main */
 main img {
@@ -21,7 +21,6 @@ main img {
 }
 main aside h2 {
     padding-bottom: .2em;
-    font-weight: lighter;
 }
 main aside {
     position: absolute;
@@ -34,14 +33,16 @@ main aside {
     padding-right: 1.5em;
 }
 main section {
-    color: LightGrey;
+    color: WhiteSmoke;
     padding: .7em 0;
 }
 main h1 {
     font-size: 1.7em;
-    color: LightGrey;
-    font-weight: lighter;
+    color: WhiteSmoke;
     padding-bottom: .3em;
+}
+main h2 {
+    font-weight: 300;
 }
 main section#first {
     width: 100%;

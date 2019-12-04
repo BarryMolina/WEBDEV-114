@@ -1,45 +1,31 @@
-/* reset selector */
-* {
-    margin: 0;
-    padding: 0;
-    }
 /* formatting for elements */
-html {
-    background-color: black;
-}
 body {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif, serif;
-    font-size: 100%;
-    width: 100%;
+    background-color: gainsboro;
 }
-h1 {
-    font-size: 2.5em;
-    color: black;
-    font-weight: 400;
-    padding-bottom: .4em;
-    padding-top: .8em;
+h2 {
+    padding-bottom: .8em;
+    font-size: 1.4em;
     text-align: center;
 }
 h3 {
-    padding-bottom: .2em;
-    font-size: 1.4em;
-}
-main {
-    background-color: gainsboro;
-    min-height: 800px;
-    padding: 0 1.2em;
+    /* font-size: 1em;
+    float: left; */
     font-weight: 400;
+}
+/* .text p {
+    overflow: hidden;
+    padding-left: .5em;
+    max-width: 25em;
+} */
+main {
+    padding: 0 1.2em;
 }
 section.choreographic-work {
     clear: both;
     overflow: hidden;
     padding-bottom: 1.5em;
-}
-p {
-    padding-bottom: 1em;
-}
-p:last-child {
-    padding-bottom: 0;
+    display: flex;
+    /* align-items: center; */
 }
 #intro {
     max-width: 800px;
@@ -48,7 +34,7 @@ p:last-child {
     padding-bottom: 2em;
 }
 .video {
-    width: 48%;
+    width: 60%;
     float: left;
     padding-right: 1em;
     padding-bottom: .5em;
@@ -70,6 +56,38 @@ p:last-child {
     left: 0px;
     top: 0px;
 }
+.text {
+    font-size: 90%;
+    align-self: center;
+}
+.meta {
+    border-spacing: 1em .3em;
+    padding-bottom: 1em;
+}
+.meta th {
+    text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+}
+.meta td {
+    max-width: 375px;
+}
+.bold {
+    font-weight: 400;
+}
+.cast {
+    overflow: auto;
+    padding-bottom: 1em;
+}
+.cast h3 {
+    text-align: center;
+    padding-bottom: .2em;
+}
+.cast p {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
 @media only screen and (max-width: 959px) {
     body {
         font-size: 95%;
@@ -87,10 +105,13 @@ p:last-child {
         padding-top: .5em;
 
     }
-    h3 {
+    h2 {
         font-size: 1.2em;
     }
-    section {
+    table {
+        margin: 0 auto;
+    }
+    section.choreographic-work {
         display: flex;
         flex-direction: column;
         padding-bottom: 1em;
@@ -99,11 +120,15 @@ p:last-child {
         width: 100%;
         float: none;
         padding-right: 0;
-        order: 2;
+        /* order: 2; */
         padding-top: .7em;
     }
     .text {
-        order: 1;
+        /* order: 1; */
+        font-size: 95%;
+    }
+    .meta td {
+        max-width: 225px;
     }
 }
 @media only screen and (max-width: 479px) {

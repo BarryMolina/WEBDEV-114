@@ -1,46 +1,18 @@
-/* reset selector */
-* {
-    margin: 0;
-    padding: 0;
-    }
 /* formatting for elements */
-html {
-    background-color: black;
-}
 body {
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif, serif;
-    font-size: 100%;
-    width: 100%;
-}
-h1 {
-    font-size: 2.5em;
-    color: black;
-    font-weight: 400;
-    padding-bottom: .4em;
-    padding-top: .8em;
-    text-align: center;
+    background-color: gainsboro;
 }
 h3 {
     padding-bottom: .2em;
     font-size: 1.4em;
 }
 main {
-    background-color: gainsboro;
-    min-height: 800px;
-    padding: 0 1.2em;
-    font-weight: 400;
 }
 section {
     max-width: 900px;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 2em;
-}
-p {
-    padding-bottom: 1em;
-}
-p:last-child {
-    padding-bottom: 0;
 }
 @media only screen and (max-width: 959px) {
     body {
