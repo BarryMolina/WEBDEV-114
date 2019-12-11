@@ -49,6 +49,9 @@ footer {
     border-top: 1px solid black;
     
 }
+#mobile_menu {
+    display: none;
+}
 main p {
     padding-bottom: 1em;
 }
@@ -155,15 +158,45 @@ footer p {
     text-shadow: 1px 1px 2px black;
 }
 @media only screen and (max-width: 767px) {
+    nav {
+        border: none;
+    }
+    a {
+        text-align: center;
+    }
     header h2 {
         font-size: 5em;
-
     }
-    #nav_menu ul {
-        justify-content: space-around;
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    div.slicknav_menu {
+        background-color: DimGrey ;
+        padding: 0; !important;
+    }
+    nav.slicknav_nav ul {
+        margin: 0;
+    }
+    #mobile_menu li a {
+        padding: .2em 0;
+        margin: 0;
+        font-family: 'Roboto';
+        font-weight: 100;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: Gainsboro;
+        text-shadow: 1px 1px 2px black;
+    }
+    #mobile_menu li a:hover {
+        color: black;
+        font-weight: 300;
+        text-shadow: 1px 1px 1px grey;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     header h2 {
         font-size: 4em;
     }

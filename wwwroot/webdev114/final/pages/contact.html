@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Timothy O'Donnell is a multi-talented artist who works with the Milwaukee Ballet to produce Choreography, Photography, and almost everything related to dance in general.">
-<meta name="keywords" content="Dance, Art, Choreography, Photography, Director, Photo editing, Film Director, Artist, Milwuakee Ballet, dance teacher">
-<title>Timothy O'Donnell - Dancer, Choreographer, Photographer, Director</title>
-<link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="../styles/main.css">
-<link rel="stylesheet" href="../styles/contact.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="../images/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Timothy O'Donnell is a multi-talented artist who works with the Milwaukee Ballet to produce Choreography, Photography, and almost everything related to dance in general.">
+    <meta name="keywords" content="Dance, Art, Choreography, Photography, Director, Photo editing, Film Director, Artist, Milwuakee Ballet, dance teacher">
+    <title>Timothy O'Donnell - Dancer, Choreographer, Photographer, Director</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
         <a href="../index.html"><h2>Timothy O&apos;Donnell</h2></a>
     </header>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
-            <li><a href="dance.html">Dance</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="choreography.html">Choreography</a></li>
-            <li><a href="photography.html">Photography</a>
-                <ul class="submenu">
+            <li><a href="gallery.html">Photography</a>
+                <!-- <ul class="submenu">
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="editing.html">Editing Process</a></li>
-                </ul></li>
+                </ul></li> -->
             <li><a href="film.html">Film</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -31,7 +40,7 @@
     <main>
         <h1>Contact Tim</h1>
 	<form action="sendmail.php" method="post" name="contact_form" id="contact_form">
-            <label for="first_name last_name">Name:</label>
+            <label >Name:</label>
             <input type="text" name="first_name" id="first_name" placeholder="First" required>
             <input type="text" name="last_name" id="last_name" placeholder="Last" required><br>
             <label for="email">Email:</label>
@@ -39,7 +48,7 @@
             <label for="phone">Phone:</label>
             <input type="tel" name="phone" id="phone" required><br>
             <label for="todays_date">Today's Date:</label>
-            <input type="date" name="todays_date" id="today_date" required><br>
+            <input type="date" name="todays_date" id="todays_date" required><br>
             <label for="subject">Subject:</label>         
             <input type="text" name="subject" id="subject" required><br>
             <label for="message">Message:</label>

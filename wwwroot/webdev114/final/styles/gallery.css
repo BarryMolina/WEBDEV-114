@@ -7,11 +7,26 @@ main {
     padding: 0 1.2em;
     position: relative;
 }
+.photos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    background: WhiteSmoke;
+    padding: 1% 0;
+    border: 1px solid black;
+}
 .photos>img {
     width: 20%;
     border: 1px solid black;
     cursor: pointer;
     transition: 0.3s;
+    margin: 1% 0;
+}
+.hidden {
+    display: none;
+    border: none;
+    padding: 0;
 }
 .photos>img:hover {
     opacity: 0.7;
@@ -81,23 +96,8 @@ h2#first {
 main h3 {
     padding-bottom: .3em;
 }
-main div.photos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    background: WhiteSmoke;
-    padding: 22px 0;
-    border: 1px solid black;
-}
-main div#art img{
+#art img{
     width: 30%;
-}
-main div.hidden {
-    display: none;
-    border: none;
-    padding-bottom: 0;
-
 }
 main a {
     text-decoration: none;
@@ -128,6 +128,13 @@ main a#hide-dance {
     main .photo {
         width: 100%;
     } */
+
+    .photos {
+        justify-content: space-evenly;
+    }
+    .photos img {
+        width: 40%;
+    }
     .modal-content {
         width: 100%;
     }

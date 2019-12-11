@@ -21,10 +21,10 @@ main {
     padding: 0 1.2em;
 }
 section.choreographic-work {
-    clear: both;
+    /* clear: both;
     overflow: hidden;
     padding-bottom: 1.5em;
-    display: flex;
+    display: flex; */
     /* align-items: center; */
 }
 #intro {
@@ -32,6 +32,10 @@ section.choreographic-work {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 2em;
+}
+.content {
+    display: flex;
+
 }
 .video {
     width: 60%;
@@ -59,6 +63,7 @@ section.choreographic-work {
 .text {
     font-size: 90%;
     align-self: center;
+    width: 40%
 }
 .meta {
     border-spacing: 1em .3em;
@@ -92,8 +97,27 @@ section.choreographic-work {
     body {
         font-size: 95%;
     }
+    h2 {
+        padding-bottom: .2em;
+    }
     .video {
-        width: 55%;
+        width: 88%;
+        padding-bottom: 1em;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .cast {
+        order: 1;
+    }
+    .meta {
+        order: 2;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -107,6 +131,7 @@ section.choreographic-work {
     }
     h2 {
         font-size: 1.2em;
+        padding-bottom: 0;
     }
     table {
         margin: 0 auto;
@@ -116,6 +141,9 @@ section.choreographic-work {
         flex-direction: column;
         padding-bottom: 1em;
     }
+    /* .content {
+        flex-direction: column;
+    } */
     .video {
         width: 100%;
         float: none;
@@ -126,6 +154,7 @@ section.choreographic-work {
     .text {
         /* order: 1; */
         font-size: 95%;
+        flex-direction: column;
     }
     .meta td {
         max-width: 225px;

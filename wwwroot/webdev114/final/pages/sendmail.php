@@ -6,7 +6,7 @@
 <meta name="keywords" content="Dance, Art, Choreography, Photography, Director, Photo editing, Film Director, Artist, Milwuakee Ballet, dance teacher">
 <title>Timothy O'Donnell - Dancer, Choreographer, Photographer, Director</title>
 <link rel="stylesheet" href="../styles/main.css">
-<link rel="stylesheet" href="../styles/home.css">
+<link rel="stylesheet" href="../styles/contact.css">
 <link rel="shortcut icon" href="../images/favicon.ico">
 </head>
 <body>
@@ -15,13 +15,14 @@
     </header>
     <nav id="nav_menu">
         <ul>
-            <li><a href="dance.html">Dance</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="choreography.html">Choreography</a></li>
-            <li><a href="photography.html">Photography</a></li>
-                <ul>
+            <li><a href="photography.html">Photography</a>
+                <!-- <ul>
                     <li><a href="photography/gallery.html">Gallery</a></li>
                     <li><a href="photography/editing.html">Editing Process</a></li>
-                </ul>
+                </ul> -->
+            </li>
             <li><a href="film.html">Film</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -29,7 +30,7 @@
     <main>
         <h1>Email Confirmation</h1>
         <form>
-            <label for="first_name last_name">Name:</label>
+            <label>Name:</label>
             <input type="text" name="first_name" id="first_name" value="<?php echo $_REQUEST['first_name'] ?>" disabled>
             <input type="text" name="last_name" id="last_name" value="<?php echo $_REQUEST['last_name'] ?>" disabled><br>
             <label for="email">Email:</label>
@@ -37,7 +38,7 @@
             <label for="phone">Phone:</label>
             <input type="tel" name="phone" id="phone" value="<?php echo $_REQUEST['phone'] ?>" disabled><br>
             <label for="todays_date">Today's Date:</label>
-            <input type="date" name="todays_date" id="today_date" value="<?php echo $_REQUEST['todays_date'] ?>" disabled><br>
+            <input type="date" name="todays_date" id="todays_date" value="<?php echo $_REQUEST['todays_date'] ?>" disabled><br>
             <label for="subject">Subject:</label>         
             <input type="text" name="subject" id="subject" value="<?php echo $_REQUEST['subject'] ?>" disabled><br>
             <label for="message">Message:</label>

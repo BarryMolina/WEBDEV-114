@@ -2,14 +2,11 @@
 body {
     background-color: gainsboro;
 }
-h3 {
-    padding-bottom: .2em;
-    font-size: 1.4em;
-}
-main {
+h2 {
+    padding-bottom: .3em;
 }
 section {
-    max-width: 900px;
+    max-width: 800px;
     text-align: center;
     margin: 0 auto;
     padding-bottom: 2em;
@@ -29,7 +26,7 @@ section {
         padding-bottom: 0;
 
     }
-    h3 {
+    h2 {
         font-size: 1.2em;
     }
 }

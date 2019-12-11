@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Timothy O'Donnell is a multi-talented artist who works with the Milwaukee Ballet to produce Choreography, Photography, and almost everything related to dance in general.">
-<meta name="keywords" content="Dance, Art, Choreography, Photography, Director, Photo editing, Film Director, Artist, Milwuakee Ballet, dance teacher">
-<title>Timothy O'Donnell - Dancer, Choreographer, Photographer, Director</title>
-<link rel="stylesheet" href="../styles/normalize.css">
-<link rel="stylesheet" href="../styles/main.css">
-<link rel="stylesheet" href="../styles/gallery.css">
-<link rel="shortcut icon" href="../images/favicon.ico">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Timothy O'Donnell is a multi-talented artist who works with the Milwaukee Ballet to produce Choreography, Photography, and almost everything related to dance in general.">
+    <meta name="keywords" content="Dance, Art, Choreography, Photography, Director, Photo editing, Film Director, Artist, Milwuakee Ballet, dance teacher">
+    <title>Timothy O'Donnell - Dancer, Choreographer, Photographer, Director</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/gallery.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header>
         <a href="../index.html"><h2>Timothy O&apos;Donnell</h2></a>
     </header>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
-            <li><a href="dance.html">Dance</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="choreography.html">Choreography</a></li>
-            <li><a href="photography.html">Photography</a>
-                <ul class="submenu">
+            <li><a href="gallery.html">Photography</a>
+                <!-- <ul class="submenu">
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="editing.html">Editing Process</a></li>
-                </ul>
+                </ul> -->
             </li>
             <li><a href="film.html">Film</a></li>
             <li><a href="contact.html">Contact</a></li>
