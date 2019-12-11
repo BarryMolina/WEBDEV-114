@@ -5,6 +5,9 @@ body {
 h1 {
     color: gainsboro;
 }
+h3 {
+    color: gainsboro;
+}
 main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../images/SansPleurer-20.jpg");
     background-position: bottom left;
@@ -61,6 +64,37 @@ input#reset {
         border: none;
     }
 }
+@media only screen and (max-width: 767px) {
+    form {
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 600px) {
+    main {
+        text-align: center;
+    }
+    form {
+        display: inline-block;
+    }
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: .3em;
+    }
+    label {
+        width: auto;
+        text-align: left;
+        padding-bottom: .1em;
+    }
+    input, textarea {
+        margin: 0;
+    }
+    form br {
+        display: none;
+    }
+}
+
 
 
 

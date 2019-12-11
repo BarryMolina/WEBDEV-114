@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/contact.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto:100,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/slicknav.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="../js/jquery.slicknav.min.js"></script>
@@ -39,24 +40,40 @@
     </nav>
     <main>
         <h1>Contact Tim</h1>
+        <div id="form">
 	<form action="sendmail.php" method="post" name="contact_form" id="contact_form">
+            <div class="input">
             <label >Name:</label>
-            <input type="text" name="first_name" id="first_name" placeholder="First" required>
-            <input type="text" name="last_name" id="last_name" placeholder="Last" required><br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required><br>
-            <label for="phone">Phone:</label>
-            <input type="tel" name="phone" id="phone" required><br>
-            <label for="todays_date">Today's Date:</label>
-            <input type="date" name="todays_date" id="todays_date" required><br>
-            <label for="subject">Subject:</label>         
-            <input type="text" name="subject" id="subject" required><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="10" required></textarea><br>
+                <div>
+                    <input type="text" name="first_name" id="first_name" placeholder="First" required>
+                    <input type="text" name="last_name" id="last_name" placeholder="Last" required><br>
+                </div>
+            </div>
+            <div class="input">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required><br>
+            </div>
+            <div class="input">
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" required><br>
+            </div>
+            <div class="input">
+                <label for="todays_date">Today's Date:</label>
+                <input type="date" name="todays_date" id="todays_date" required><br>
+            </div>
+            <div class="input">
+                <label for="subject">Subject:</label>         
+                <input type="text" name="subject" id="subject" required><br>
+            </div>
+            <div class="input">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="10" required></textarea><br>
+            </div>
             <label>&nbsp;</label>
             <input type="submit" id="submit" value="Send">
             <input type="reset" id="reset" value="Reset"><br>
 	</form>
+        </div>
     </main>
     <footer>
         <p>&copy;Copyright 2019 Barry Molina</p>
