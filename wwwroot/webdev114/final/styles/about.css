@@ -11,6 +11,9 @@ section {
     margin: 0 auto;
     padding-bottom: 2em;
 }
+p a {
+    text-decoration: none;
+}
 @media only screen and (max-width: 959px) {
     body {
         font-size: 95%;

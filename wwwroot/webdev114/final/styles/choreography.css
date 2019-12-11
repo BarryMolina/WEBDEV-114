@@ -68,6 +68,7 @@ section.choreographic-work {
 .meta {
     border-spacing: 1em .3em;
     padding-bottom: 1em;
+    margin: 0 auto;
 }
 .meta th {
     text-align: right;
@@ -92,6 +93,9 @@ section.choreographic-work {
     text-align: center;
     max-width: 400px;
     margin: 0 auto;
+}
+#intro a {
+    text-decoration: none;
 }
 @media only screen and (max-width: 959px) {
     body {
