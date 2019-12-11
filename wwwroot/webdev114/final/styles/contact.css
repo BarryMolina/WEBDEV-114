@@ -7,7 +7,7 @@ h1 {
 }
 main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../images/SansPleurer-20.jpg");
-    background-position: center;
+    background-position: bottom left;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
